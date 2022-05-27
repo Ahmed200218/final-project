@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>Education</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+ <script src="https://kit.fontawesome.com/be93b6a1da.js" crossorigin="anonymous"></script>
+</head>
+    <body>
+   
+    <section class ="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="Navlinks";>
+                <i onclick="hidemenu()" class="fa fa-xmark"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="sign up.html">SIGN UP</a></li>
+                 </ul>
+                </div>
+        </nav> 
+        <section class="sign-up">
+            <div class="form-section" id="p1">
+     
+     
+       
+         <form action="index.html" method="GET"  class="for"  id="formsection" onsubmit="validateForm()" >
+                <table>
+     <tr>
+        <td>
+            <label for="fname" class="word"><i class="fa fa-user"></i> first Name</label>
+    
+        </td>
+         <td>
+            <input type="text" id="fname" class="in" placeholder="Enter your first name" >
+            <span id = "blankMsg" style="color:red;font-size: x-small;"></span>  
+     
+         </td>
+         <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+         </tr>
+     
+         
+             <tr>
+                 <td>
+                     <label for="lname" class="word"><i class="fa fa-user"></i> last Name</label>
+             
+                 </td>
+                 <td>
+                     <input type="text" id="lname" class="in" placeholder="Enter your last name" >
+                     <span id = "charMsg" style="color:red;font-size: x-small;"> </span>  
+     
+                 </td>
+                 </tr>
+     
+                 <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+                     <tr>
+                         <td>
+                             <label for="email" id="email" class="word"><i class="fa fa-envelope"></i> Email</label>
+     
+                     
+                         </td>
+                         <td>
+                             <input type="text" id="em" class="in" placeholder="ahmed@Example.com" >
+                             <span id = "message0" style="color:red; font-size: x-small;"> </span>   
+     
+                         </td>
+                         </tr>
+                         <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+                 
+                     <tr>
+                         <td>
+                             
+                             <label for="adr" class="word"><i class="fa fa-address-card-o"></i> Address</label>
+                     
+                         </td>
+                         <td>
+                             <input type="text" id="addrese"class="in" name="address" placeholder="256 K. 20th Street">
+                         </td>
+                         </tr>
+                         <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+     
+     <tr>
+         <td>
+             <label for="city" class="word"><i class="fa fa-institution"></i> City</label>
+     
+         </td>
+         <td>
+             <input type="text" id="city" class="in" name="city" placeholder="New York">
+     
+         </td>
+     </tr>
+     <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+     <tr>
+         <td>            <label for="phoneNum" class="word">Phone Number</label>
+         </td>
+         <td>
+     
+             <input type="text"id="telephone"class="in"  placeholder="01XXXXXXXX"/>
+             <span id = "message00" style="color:red; font-size: x-small;"> </span> 
+     
+         </td>
+         
+     
+     </tr>
+     <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+     <tr>
+         <td><label for="password" class="word" id="pass">Password</label></td>
+         <td>            <input type="password"id="password"class="in"placeholder="Enter Password"  />
+             <span id = "message1" style="color:red; font-size: x-small;"> </span>  
+     
+         </td>
+     </tr>
+     <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+     <tr>
+         <td>            <label for="password2" class="word">Confirm Password</label>    </td>
+         <td>
+             <input type="password"id="password2"class="in" placeholder="Enter Password Again"/>
+             <span id = "message2" style="color:red;font-size: x-small; "> </span>  
+     
+         </td>
+     </tr>
+     <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+     <tr><td>
+         <label class="word" for="gender">Gender</label><br />
+     
+     </td>
+     
+     <td> <select name="gender" id="gender" class="select">
+         <option value="male">Male</option>
+         <option value="female">Female</option>
+       </select> </td>
+     </tr>
+     <tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr><tr><td> </td></tr>
+     <tr>
+        <td colspan="2";>       <center> <a href="index.html"> <button type="submit" class="submition hero-btn" id="submition">Submit</button></a> </center>
+         </td>
+     </tr>
+     
+     
+     </table>
+     </form>
+     </div>
+     </section>
+    </section>
+
+
+    <!------footer-------->
+    <section class="footer">
+    <h4>ABOUT US</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam laborum natus quae praesentium harum, consequatur reprehenderit tempora<br> nesciunt sunt beatae repellendus reiciendis ad sequi totam, rerum ipsum sed cumque corporis!</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <p>made by Ahmed</p>
+     </section>
+
+
+
+
+
+
+<script src="pro.js"></script>
+    </body>
+</html>
